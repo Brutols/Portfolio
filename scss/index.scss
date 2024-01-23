@@ -1,10 +1,18 @@
 @import "./resets";
 @import "./variables";
 @import "./home";
+@import "./mixins";
+@import "./menu";
+@import "./about";
+@import "./projects";
+
+.text-accent {
+    color: $accent-color;
+}
 
 body {
   background: $background-color;
-  color: $secondary-color;
+  color: set-text-color($background-color);
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
@@ -15,7 +23,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: $secondary-color;
+    color: set-text-color($background-color);
     text-decoration: none;
 }
 
@@ -37,6 +45,7 @@ main {
 
         a {
             padding: 0.4rem;
+            @include transition-ease;
 
             .ion-icon {
                 font-size: 24px;
@@ -56,5 +65,5 @@ footer {
     right: 1rem;
     text-align: right;
     padding: 1rem;
-    color: $secondary-color;
+    color: set-text-color($background-color);
 }
