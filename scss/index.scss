@@ -1,10 +1,10 @@
-@import "./resets";
-@import "./variables";
+@import "./config";
 @import "./home";
-@import "./mixins";
 @import "./menu";
 @import "./about";
 @import "./projects";
+@import "./contact";
+@import "./responsive";
 
 .text-accent {
     color: $accent-color;
