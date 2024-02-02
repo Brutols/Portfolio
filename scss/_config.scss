@@ -4,9 +4,9 @@
   padding: 0;
 }
 
-$accent-color: #d8973b;
-$text-color: #fff5d6;
-$background-color: #131201;
+$accent-color: #17BEBB;
+$text-color: #fff;
+$background-color: #2D2A32;
 
 @function set-text-color($color) {
   @if (lightness($color) > 40%) {
